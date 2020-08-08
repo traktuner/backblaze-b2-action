@@ -25,7 +25,7 @@ jobs:
     - uses: jakejarvis/backblaze-b2-action@master
       env:
         SOURCE_DIR: './public'
-        B2_BUCKET: ${{ secrets.B2_BUCKET }}
+        B2_BUCKET_PATH: 'b2://some-bucket/some/path/'
         B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
         B2_APPKEY: ${{ secrets.B2_APPKEY }}
 ```
@@ -44,7 +44,7 @@ The following variables should be added as "secrets" in the action's configurati
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `B2_BUCKET` | The name of the bucket you're syncing to. For example, `my_files`. | `secret` | **Yes** |
+| `B2_BUCKET_PATH` | The name of the bucket you're syncing to. For example, `my_files`. | `secret` | **Yes** |
 | `B2_APPKEY_ID` | Your Backblaze Application Key ID. [Generate it here.](https://secure.backblaze.com/app_keys.htm) | `secret` | **Yes** |
 | `B2_APPKEY` | Your Backblaze Application Key — aka the "secret" key. [Generate it here.](https://secure.backblaze.com/app_keys.htm) | `secret` | **Yes** |
 
