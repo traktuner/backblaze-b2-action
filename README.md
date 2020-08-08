@@ -44,7 +44,7 @@ The following variables should be added as "secrets" in the action's configurati
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `B2_BUCKET_PATH` | The name of the bucket you're syncing to. For example, `my_files`. | `secret` | **Yes** |
+| `B2_BUCKET_PATH` | The name of the bucket you're syncing to. For example, `b2://some-bucket/some/dir/`. | `secret` | **Yes** |
 | `B2_APPKEY_ID` | Your Backblaze Application Key ID. [Generate it here.](https://secure.backblaze.com/app_keys.htm) | `secret` | **Yes** |
 | `B2_APPKEY` | Your Backblaze Application Key — aka the "secret" key. [Generate it here.](https://secure.backblaze.com/app_keys.htm) | `secret` | **Yes** |
 
