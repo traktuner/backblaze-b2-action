@@ -2,8 +2,8 @@
 
 set -e
 
-if [ -z "$B2_BUCKET" ]; then
-  echo "B2_BUCKET is not set. Quitting."
+if [ -z "$B2_BUCKET_PATH" ]; then
+  echo "B2_BUCKET_PATH is not set. Quitting."
   exit 1
 fi
 
