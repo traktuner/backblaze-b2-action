@@ -24,7 +24,7 @@ fi
 
 b2 authorize-account ${B2_APPKEY_ID} ${B2_APPKEY}
 
-b2 sync --delete --replaceNewer ${SOURCE_DIR} "b2://${B2_BUCKET}"
+b2 sync --delete --replaceNewer "${SOURCE_DIR}" "${B2_BUCKET_PATH}"
 
 # TO-DO: Delete old versions of updated files because that's what
 # we're already using GitHub for... but B2 doesn't make this easy:
